@@ -182,3 +182,14 @@ footer a:hover {
         padding: 0.25rem;
     }
 }
+
+@media screen and (max-width: 150px) {
+    .slider-element button {
+        padding: 0.05rem;
+        border: 0.05rem solid cadetblue;
+    }
+
+    .slider-element {
+        padding: 0.15rem;
+    }
+}
