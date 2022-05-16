@@ -33,8 +33,9 @@ h1 {
 
 .mem-img img {
     max-height: 60vh;
-    max-width: 40vw;
+    max-width: 38vw;
     height: 100%;
+    padding: 0.1rem;
 }
 
 
@@ -111,5 +112,73 @@ footer a:hover {
     color: cadetblue;
 }
 
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 70vw;
+    }
 
+    .mem-img {
+        width: 60vw;
+    }
 
+    .mem-img img {
+        max-width: 58vw;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .wrapper {
+        width: 85vw;
+    }
+
+    .mem-img {
+        width: 75vw;
+    }
+
+    .mem-img img {
+        max-width: 73vw;
+    }
+
+    .slider-element {
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mem-text {
+        font-size: 0.8rem;
+    }
+
+    .mem-img {
+        width: 80vw;
+    }
+
+    .slider-element button {
+        padding: 0.25rem;
+        border: 0.15rem solid cadetblue;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .wrapper {
+        grid-template-areas:
+                        "mem-img"
+                        "slider"
+                        "mem-text ";
+    }
+
+    .slider {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .slider-element button {
+        padding: 0.15rem;
+        border: 0.08rem solid cadetblue;
+    }
+
+    .slider-element {
+        padding: 0.25rem;
+    }
+}
