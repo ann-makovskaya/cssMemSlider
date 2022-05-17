@@ -79,6 +79,11 @@ h1 {
     transition: 0.5s;
 }
 
+.slider-element:active button, .slider-element button:active {
+    transform: scale(1.5);
+    background: deeppink !important;
+}
+
 .slider-element:hover button {
     background: aliceblue;
     border-color: aliceblue;
