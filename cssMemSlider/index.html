@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>CSS Mem Slider</title>
+    <link type="image/png" rel="icon" href="assets/icons8-smile-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Mem Slider</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="freedom_check" checked>
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="circle_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="goat_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="haircut_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="mama_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="pay_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="white_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="wine_check">
+            <div class="mem-img">
+                <img src="assets/8pm.jpg" alt="8pm" id="freedom_img">
+                <img src="assets/circle.jpg" alt="circle" id="circle_img">
+                <img src="assets/goat.jpg" alt="goat" id="goat_img">
+                <img src="assets/haircut.jpg" alt="haircut" id="haircut_img">
+                <img src="assets/mama.jpg" alt="mama" id="mama_img">
+                <img src="assets/pay.jpg" alt="pay" id="pay_img">
+                <img src="assets/white.jpg" alt="white" id="white_img">
+                <img src="assets/wine.jpg" alt="wine" id="wine_img">
+            </div>
+            <div class="mem-text">
+                <span id="freedom_text">FREEDOM!!!</span>
+                <span id="circle_text">We just friends...</span>
+                <span id="goat_text">Stop, I didn't finish!</span>
+                <span id="haircut_text">New haircut - new life.</span>
+                <span id="mama_text">Hide and seek</span>
+                <span id="pay_text">It also infuriates when they don’t bow to you at a meeting.</span>
+                <span id="white_text">White moves first.</span>
+                <span id="wine_text">Respect for other people's work.</span>
+            </div>
+            <div class="slider">
+                <label for="freedom_check">
+                    <div class="slider-element" id="freedom_btn"></div>
+                </label>
+                <label for="circle_check">
+                    <div class="slider-element" id="circle_btn"></div>
+                </label>
+                <label for="goat_check">
+                    <div class="slider-element" id="goat_btn"></div>
+                </label>
+                <label for="haircut_check">
+                    <div class="slider-element" id="haircut_btn"></div>
+                </label>
+                <label for="mama_check">
+                    <div class="slider-element" id="mama_btn"></div>
+                </label>
+                <label for="pay_check">
+                    <div class="slider-element" id="pay_btn"></div>
+                </label>
+                <label for="white_check">
+                    <div class="slider-element" id="white_btn"></div>
+                </label>
+                <label for="wine_check">
+                    <div class="slider-element" id="wine_btn"></div>
+                </label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Watch <a href="https://github.com/ann-makovskaya/cssMemSlider/pull/1" target="_blank"><b>pull request</b></a>
+    </footer>
+</body>
+</html>

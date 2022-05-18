@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: url("assets/background.jpg");
+    background-size: auto 100vh;
+    font-family: 'Merriweather', serif;
+    caret-color: transparent;
+}
+
+h1 {
+    margin: 2vw 0 1.5vw;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 2rem 5vw;
+    background: rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 3rem rgb(0 0 0 / 10%);
+    width: 50vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "mem-img mem-img"
+                         "mem-text slider";
+    justify-content: center;
+    row-gap: 0.3rem;
+    align-items: center
+}
+
+.mem-img img {
+    max-height: 60vh;
+    max-width: 38vw;
+    height: 100%;
+    padding: 0.1rem;
+    margin: 0 auto;
+}
+
+.mem-img img, .mem-text span {
+    display: none;
+    opacity: 0;
+}
+
+.mem-img {
+    grid-area: mem-img;
+    width: 40vw;
+    text-align: center;
+    background: rgb(255,255,255);
+    border-radius: 1rem;
+    max-height: 60vh;
+}
+
+.mem-text {
+    grid-area: mem-text;
+    padding: 0.35rem;
+    color: #263f40;
+}
+
+.slider {
+    display: inline-flex;
+    justify-content: flex-end;
+    grid-area: slider;
+}
+
+.slider-element {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    border: 0.2rem solid cadetblue;
+    background: cadetblue;
+    margin: 0 0.5vw;
+    transition: 0.5s;
+}
+
+.slider label {
+    padding: 0.5vw 0;
+}
+
+.slider label:hover .slider-element, .slider-element:hover {
+    background: aliceblue;
+    border-color: aliceblue;
+}
+
+.slider label:active .slider-element, .slider-element:active {
+    transform: scale(1.3);
+    background: deeppink !important;
+    transition: 0.1s;
+}
+
+#circle_check:checked ~ .slider #circle_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#freedom_check:checked ~ .slider #freedom_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#goat_check:checked ~ .slider #goat_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#mama_check:checked ~ .slider #mama_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#pay_check:checked ~ .slider #pay_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#white_check:checked ~ .slider #white_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#wine_check:checked ~ .slider #wine_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#haircut_check:checked ~ .slider #haircut_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#circle_check:checked ~ .slider #circle_btn:hover, #circle_check:checked ~ .slider label[for="circle_check"]:hover #circle_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#freedom_check:checked ~ .slider #freedom_btn:hover, #freedom_check:checked ~ .slider label[for="freedom_check"]:hover #freedom_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#goat_check:checked ~ .slider #goat_btn:hover, #goat_check:checked ~ .slider label[for="goat_check"]:hover #goat_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#mama_check:checked ~ .slider #mama_btn:hover, #mama_check:checked ~ .slider label[for="mama_check"]:hover  #mama_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#pay_check:checked ~ .slider #pay_btn:hover, #pay_check:checked ~ .slider label[for="pay_check"]:hover #pay_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#white_check:checked ~ .slider #white_btn:hover, #white_check:checked ~ .slider label[for="white_check"]:hover #white_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#wine_check:checked ~ .slider #wine_btn:hover, #wine_check:checked ~ .slider label[for="wine_check"]:hover #wine_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#haircut_check:checked ~ .slider #haircut_btn:hover, #haircut_check:checked ~ .slider label[for="haircut_check"]:hover #haircut_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#freedom_check:checked ~ .mem-img #freedom_img, #freedom_check:checked ~ .mem-text #freedom_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#circle_check:checked ~ .mem-img #circle_img, #circle_check:checked ~ .mem-text #circle_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#pay_check:checked ~ .mem-img #pay_img, #pay_check:checked ~ .mem-text #pay_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#mama_check:checked ~ .mem-img #mama_img, #mama_check:checked ~ .mem-text #mama_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#haircut_check:checked ~ .mem-img #haircut_img, #haircut_check:checked ~ .mem-text #haircut_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#goat_check:checked ~ .mem-img #goat_img, #goat_check:checked ~ .mem-text #goat_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#white_check:checked ~ .mem-img #white_img, #white_check:checked ~ .mem-text #white_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#wine_check:checked ~ .mem-img #wine_img, #wine_check:checked ~ .mem-text #wine_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+footer {
+    margin-top: 4vh;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: cadetblue;
+}
+
+.hiddenCheckbox {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 70vw;
+    }
+
+    .mem-img {
+        width: 60vw;
+    }
+
+    .mem-img img {
+        max-width: 58vw;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .wrapper {
+        width: 85vw;
+    }
+
+    .mem-img {
+        width: 75vw;
+    }
+
+    .mem-img img {
+        max-width: 73vw;
+    }
+
+    .slider-element {
+        width: 3vw;
+        height: 3vw;
+        margin: 0 0.7vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mem-text {
+        font-size: 0.8rem;
+    }
+
+    .mem-img {
+        width: 80vw;
+    }
+
+    .slider-element {
+        width: 4vw;
+        height: 4vw;
+        margin: 0 1vw;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .wrapper {
+        grid-template-areas:
+                        "mem-img"
+                        "slider"
+                        "mem-text ";
+    }
+
+    .slider {
+        justify-content: center;
+    }
+}
