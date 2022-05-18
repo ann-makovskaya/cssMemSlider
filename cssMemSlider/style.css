@@ -9,6 +9,7 @@ body {
     background: url("assets/background.jpg");
     background-size: auto 100vh;
     font-family: 'Merriweather', serif;
+    caret-color: transparent;
 }
 
 h1 {
@@ -77,35 +78,101 @@ h1 {
     grid-area: slider;
 }
 
-.slider-element button {
-    padding: 0.35rem;
-    border-radius: 50%;
+.slider-element {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
     border: 0.2rem solid cadetblue;
     background: cadetblue;
+    margin: 0 0.5vw;
     transition: 0.5s;
 }
 
-.slider-element:active button, .slider-element button:active {
-    transform: scale(1.5);
-    background: deeppink !important;
+.slider label {
+    padding: 0.5vw 0;
 }
 
-.slider-element:hover button {
+.slider label:hover .slider-element, .slider-element:hover {
     background: aliceblue;
     border-color: aliceblue;
 }
 
-.slider-element.active button {
+.slider label:active .slider-element, .slider-element:active {
+    transform: scale(1.3);
+    background: deeppink !important;
+    transition: 0.1s;
+}
+
+#circle_check:checked ~ .slider #circle_btn {
     background: none;
     border-color: aliceblue;
 }
 
-.slider-element.active:hover button {
-    background: aliceblue;
+#freedom_check:checked ~ .slider #freedom_btn {
+    background: none;
+    border-color: aliceblue;
 }
 
-.slider-element {
-    padding: 0.5rem;
+#goat_check:checked ~ .slider #goat_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#mama_check:checked ~ .slider #mama_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#pay_check:checked ~ .slider #pay_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#white_check:checked ~ .slider #white_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#wine_check:checked ~ .slider #wine_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#haircut_check:checked ~ .slider #haircut_btn {
+    background: none;
+    border-color: aliceblue;
+}
+
+#circle_check:checked ~ .slider #circle_btn:hover, #circle_check:checked ~ .slider label[for="circle_check"]:hover #circle_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#freedom_check:checked ~ .slider #freedom_btn:hover, #freedom_check:checked ~ .slider label[for="freedom_check"]:hover #freedom_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#goat_check:checked ~ .slider #goat_btn:hover, #goat_check:checked ~ .slider label[for="goat_check"]:hover #goat_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#mama_check:checked ~ .slider #mama_btn:hover, #mama_check:checked ~ .slider label[for="mama_check"]:hover  #mama_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#pay_check:checked ~ .slider #pay_btn:hover, #pay_check:checked ~ .slider label[for="pay_check"]:hover #pay_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#white_check:checked ~ .slider #white_btn:hover, #white_check:checked ~ .slider label[for="white_check"]:hover #white_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#wine_check:checked ~ .slider #wine_btn:hover, #wine_check:checked ~ .slider label[for="wine_check"]:hover #wine_btn {
+    background: rgba(240, 248, 255, 0.3);
+}
+
+#haircut_check:checked ~ .slider #haircut_btn:hover, #haircut_check:checked ~ .slider label[for="haircut_check"]:hover #haircut_btn {
+    background: rgba(240, 248, 255, 0.3);
 }
 
 footer {
@@ -123,7 +190,9 @@ footer a:hover {
     color: cadetblue;
 }
 
-.mem-img
+.hiddenCheckbox {
+    display: none;
+}
 
 @media screen and (max-width: 1300px) {
     .wrapper {
@@ -152,9 +221,9 @@ footer a:hover {
         max-width: 73vw;
     }
 
-    .slider-element {
+    /*.slider-element {
         padding: 0.4rem;
-    }
+    }*/
 }
 
 @media screen and (max-width: 600px) {
@@ -166,10 +235,10 @@ footer a:hover {
         width: 80vw;
     }
 
-    .slider-element button {
+    /*.slider-element button {
         padding: 0.25rem;
         border: 0.15rem solid cadetblue;
-    }
+    }*/
 }
 
 @media screen and (max-width: 412px) {
@@ -186,23 +255,23 @@ footer a:hover {
 }
 
 @media screen and (max-width: 260px) {
-    .slider-element button {
+    /*.slider-element button {
         padding: 0.15rem;
         border: 0.08rem solid cadetblue;
     }
 
     .slider-element {
         padding: 0.25rem;
-    }
+    }*/
 }
 
 @media screen and (max-width: 150px) {
-    .slider-element button {
+    /*.slider-element button {
         padding: 0.05rem;
         border: 0.05rem solid cadetblue;
     }
 
     .slider-element {
         padding: 0.15rem;
-    }
+    }*/
 }

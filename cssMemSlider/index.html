@@ -16,51 +16,59 @@
     </header>
     <main>
         <div class="wrapper">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="freedom_check" checked>
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="circle_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="goat_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="haircut_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="mama_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="pay_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="white_check">
+            <input type="radio" name="sliderRadio" class="hiddenCheckbox" id="wine_check">
             <div class="mem-img">
-                <img src="assets/8pm.jpg" alt="8pm" class="show">
-                <img src="assets/circle.jpg" alt="circle">
-                <img src="assets/goat.jpg" alt="goat">
-                <img src="assets/haircut.jpg" alt="haircut">
-                <img src="assets/mama.jpg" alt="mama">
-                <img src="assets/pay.jpg" alt="pay">
-                <img src="assets/white.jpg" alt="white">
-                <img src="assets/wine.jpg" alt="wine">
+                <img src="assets/8pm.jpg" alt="8pm" class="show" id="freedom_img">
+                <img src="assets/circle.jpg" alt="circle" id="circle_img">
+                <img src="assets/goat.jpg" alt="goat" id="goat_img">
+                <img src="assets/haircut.jpg" alt="haircut" id="haircut_img">
+                <img src="assets/mama.jpg" alt="mama" id="mama_img">
+                <img src="assets/pay.jpg" alt="pay" id="pay_img">
+                <img src="assets/white.jpg" alt="white" id="white_img">
+                <img src="assets/wine.jpg" alt="wine" id="wine_img">
             </div>
             <div class="mem-text">
-                <span class="show">FREEDOM!!!</span>
-                <span>We just friends...</span>
-                <span>Stop, I didn't finish!</span>
-                <span>New haircut - new life.</span>
-                <span>Hide and seek</span>
-                <span>It also infuriates when they don’t bow to you at a meeting.</span>
-                <span>White moves first.</span>
-                <span>Respect for other people's work.</span>
+                <span class="show" id="freedom_text">FREEDOM!!!</span>
+                <span id="circle_text">We just friends...</span>
+                <span id="goat_text">Stop, I didn't finish!</span>
+                <span id="haircut_text">New haircut - new life.</span>
+                <span id="mama_text">Hide and seek</span>
+                <span id="pay_text">It also infuriates when they don’t bow to you at a meeting.</span>
+                <span id="white_text">White moves first.</span>
+                <span id="wine_text">Respect for other people's work.</span>
             </div>
             <div class="slider">
-                <div class="slider-element active" data-mem-id="8pm">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="circle">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="goat">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="haircut">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="mama">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="pay">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="white">
-                    <button></button>
-                </div>
-                <div class="slider-element" data-mem-id="wine">
-                    <button></button>
-                </div>
+                <label for="freedom_check">
+                    <div class="slider-element" id="freedom_btn"></div>
+                </label>
+                <label for="circle_check">
+                    <div class="slider-element" id="circle_btn"></div>
+                </label>
+                <label for="goat_check">
+                    <div class="slider-element" id="goat_btn"></div>
+                </label>
+                <label for="haircut_check">
+                    <div class="slider-element" id="haircut_btn"></div>
+                </label>
+                <label for="mama_check">
+                    <div class="slider-element" id="mama_btn"></div>
+                </label>
+                <label for="pay_check">
+                    <div class="slider-element" id="pay_btn"></div>
+                </label>
+                <label for="white_check">
+                    <div class="slider-element" id="white_btn"></div>
+                </label>
+                <label for="wine_check">
+                    <div class="slider-element" id="wine_btn"></div>
+                </label>
             </div>
         </div>
     </main>
