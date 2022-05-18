@@ -45,18 +45,6 @@ h1 {
     opacity: 0;
 }
 
-.mem-img img.show, .mem-text span.show {
-    /*animation: show 1s;*/
-    opacity: 1;
-    display: block;
-}
-
-/*@keyframes show {
-    100% {
-        opacity: 1;
-    }
-}*/
-
 .mem-img {
     grid-area: mem-img;
     width: 40vw;
@@ -173,6 +161,63 @@ h1 {
 
 #haircut_check:checked ~ .slider #haircut_btn:hover, #haircut_check:checked ~ .slider label[for="haircut_check"]:hover #haircut_btn {
     background: rgba(240, 248, 255, 0.3);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#freedom_check:checked ~ .mem-img #freedom_img, #freedom_check:checked ~ .mem-text #freedom_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#circle_check:checked ~ .mem-img #circle_img, #circle_check:checked ~ .mem-text #circle_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#pay_check:checked ~ .mem-img #pay_img, #pay_check:checked ~ .mem-text #pay_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#mama_check:checked ~ .mem-img #mama_img, #mama_check:checked ~ .mem-text #mama_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#haircut_check:checked ~ .mem-img #haircut_img, #haircut_check:checked ~ .mem-text #haircut_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#goat_check:checked ~ .mem-img #goat_img, #goat_check:checked ~ .mem-text #goat_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#white_check:checked ~ .mem-img #white_img, #white_check:checked ~ .mem-text #white_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
+}
+
+#wine_check:checked ~ .mem-img #wine_img, #wine_check:checked ~ .mem-text #wine_text {
+    display: block;
+    opacity: 1;
+    animation: show 1s;
 }
 
 footer {
