@@ -266,9 +266,11 @@ footer a:hover {
         max-width: 73vw;
     }
 
-    /*.slider-element {
-        padding: 0.4rem;
-    }*/
+    .slider-element {
+        width: 3vw;
+        height: 3vw;
+        margin: 0 0.7vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -280,10 +282,11 @@ footer a:hover {
         width: 80vw;
     }
 
-    /*.slider-element button {
-        padding: 0.25rem;
-        border: 0.15rem solid cadetblue;
-    }*/
+    .slider-element {
+        width: 4vw;
+        height: 4vw;
+        margin: 0 1vw;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -297,26 +300,4 @@ footer a:hover {
     .slider {
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 260px) {
-    /*.slider-element button {
-        padding: 0.15rem;
-        border: 0.08rem solid cadetblue;
-    }
-
-    .slider-element {
-        padding: 0.25rem;
-    }*/
-}
-
-@media screen and (max-width: 150px) {
-    /*.slider-element button {
-        padding: 0.05rem;
-        border: 0.05rem solid cadetblue;
-    }
-
-    .slider-element {
-        padding: 0.15rem;
-    }*/
 }
